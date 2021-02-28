@@ -1,1 +1,1 @@
-# my_mac_us_ru_keyboard_layout
+# my_us_ru_keyboard_layout
