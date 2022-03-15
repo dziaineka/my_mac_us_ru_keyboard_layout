@@ -278,7 +278,7 @@ xkb_symbols "phonetic_YAZHERTY" {
     include "ru(phonetic_winkeys)"
     name[Group1]= "Russian (phonetic, YAZHERTY)";
     key	<LatW> {	[     Cyrillic_zhe,     Cyrillic_ZHE	]	};
-    key	<LatV> {	[    Cyrillic_ve,    Cyrillic_VE	]	}; 
+    key	<LatV> {	[    Cyrillic_ve,    Cyrillic_VE	]	};
 };
 
 
@@ -837,16 +837,17 @@ xkb_symbols "chu" {
 };
 
 
-// RUU (Russian-Ukrainian United keyboard layout).
+// RUU (Russian-Belarusian-Ukrainian United keyboard layout).
 // This is a modified Russian standard keyboard, with the third level containing
-// Ukrainian and Belorusian alphabetic letters and commonly used Unicode symbols.
+// Ukrainian and Belarusian alphabetic letters and commonly used Unicode symbols.
 // For a description see http://wiki.opennet.ru/RUU [in Russian].
 // Vasyĺ V. Vercynśkyj <fuckel@ukr.net>
 // last changes 2011/05/11
+// Altered by Andrei Dziaineka <dziaineka@gmail.com>
 //
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━┓
-// │ ~ ’ │ ! ≈ │ " ∞ │ № ₴ │ ; € │ % ‰ │ : ≤ │ ? ≥ │ * × │ ( { │ ) } │ _ – │ + ± ┃ ⌫       ┃
-// │ `  ́ │ 1 ÷ │ 2 ¤ │ 3 § │ 4 $ │ 5 ° │ 6 < │ 7 > │ 8 • │ 9 [ │ 0 ] │ - — │ = ≠ ┃Backspace┃
+// │ ~ ’ │ ! ≈ │ " ∞ │ # ₴ │ % € │ : ‰ │ , ≤ │ ? ≥ │ ; × │ ( { │ ) } │ _ – │ + ± ┃ ⌫       ┃
+// │ `  ́ │ 1 ÷ │ 2 @ │ 3 § │ 4 $ │ 5 ° │ 6 < │ 7 > │ 8 • │ 9 [ │ 0 ] │ - — │ = ≠ ┃Backspace┃
 // ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
 // ┃       ┃ Й   │ Ц   │ У Ў │ К   │ Е Ё │ Н   │ Г Ґ │ Ш   │ Щ Ў │ З   │ Х   │ Ъ ' ┃ Enter ┃
 // ┃ Tab ↹ ┃ й   │ ц   │ у ў │ к ® │ е ё │ н   │ г ґ │ ш   │ щ ў │ з   │ х   │ ъ ’ ┃   ⏎   ┃
@@ -854,7 +855,7 @@ xkb_symbols "chu" {
 // ┃ Caps   ┃ Ф   │ Ы Ї │ В   │ А   │ П   │ Р   │ О   │ Л   │ Д   │ Ж   │ Э Є │ | ¦ ┃      ┃
 // ┃ Lock ⇬ ┃ ф   │ ы ї │ в   │ а   │ п   │ р   │ о   │ л   │ д   │ ж   │ э є │ / \ ┃      ┃
 // ┣━━━━━━━━┻━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┲━━━┷━━━━━┻━━━━━━┫
-// ┃          ┃ Я   │ Ч   │ С   │ М   │ И І │ Т   │ Ь   │ Б „ │ Ю “ │ , … ┃                ┃
+// ┃          ┃ Я   │ Ч   │ С   │ М   │ И І │ Т   │ Ь   │ Б „ │ Ю “ │ * … ┃                ┃
 // ┃  Shift ⇧ ┃ я   │ ч   │ с © │ м   │ и і │ т ™ │ ь µ │ б « │ ю » │ . / ┃     Shift ⇧    ┃
 // ┣━━━━━━━┳━━┻━━━━┳┷━━━━━┷┱────┴─────┴─────┴─────┴─────┴─────┴┲━━━━┷━━┳━━┻━━━━┳━━━━━━━┳━━━┛
 // ┃       ┃       ┃       ┃                                   ┃       ┃       ┃       ┃
@@ -868,13 +869,13 @@ xkb_symbols "ruu" {
 
     key <TLDE> { [  grave,  asciitilde,         U0301,       U2019  ] };
     key <AE01> { [      1,      exclam,      division,       U2248  ] };  // Division Sign and Almost Equal To
-    key <AE02> { [      2,    quotedbl,      currency,    infinity  ] };
-    key <AE03> { [      3,  numerosign,       section,       U20B4  ] };  // Paragraph and Hryvnia sign
-    key <AE04> { [      4,   semicolon,        dollar,    EuroSign  ] };
-    key <AE05> { [      5,     percent,        degree,    permille  ] };
-    key <AE06> { [      6,       colon,        less, lessthanequal  ] };
+    key <AE02> { [      2,    quotedbl,            at,    infinity  ] };
+    key <AE03> { [      3,  numbersign,       section,       U20B4  ] };  // Paragraph and Hryvnia sign
+    key <AE04> { [      4,     percent,        dollar,    EuroSign  ] };
+    key <AE05> { [      5,       colon,        degree,    permille  ] };
+    key <AE06> { [      6,       comma,        less, lessthanequal  ] };
     key <AE07> { [      7,    question,  greater, greaterthanequal  ] };
-    key <AE08> { [      8,    asterisk,enfilledcircbullet,multiply  ] };
+    key <AE08> { [      8,    semicolon,enfilledcircbullet,multiply  ] };
     key <AE09> { [      9,   parenleft,   bracketleft,   braceleft  ] };
     key <AE10> { [      0,  parenright,  bracketright,  braceright  ] };
     key <AE11> { [  minus,  underscore,        emdash,      endash  ] };
@@ -898,7 +899,7 @@ xkb_symbols "ruu" {
     key <AB07> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN,             mu                       ] };
     key <AB08> { [       Cyrillic_be,       Cyrillic_BE,  guillemotleft,  doublelowquotemark  ] };
     key <AB09> { [       Cyrillic_yu,       Cyrillic_YU, guillemotright, leftdoublequotemark  ] };
-    key <AB10> { [            period,             comma,          slash,            ellipsis  ] };
+    key <AB10> { [            period,          asterisk,          slash,            ellipsis  ] };
 };
 
 partial alphanumeric_keys
@@ -973,7 +974,7 @@ xkb_symbols "prxn" {
     key <AD01> { [ Cyrillic_shorti,   Cyrillic_SHORTI,                 Cyrillic_je,            Cyrillic_JE,     U04CF,    U04C0,                                  U030A,    U0325 ] };	                             // й Й ј Ј ӏ Ӏ, Combining Ring Above and Below
     key <AD02> { [      Cyrillic_tse,    Cyrillic_TSE,                       U04B5,                  U04B4,     Cyrillic_u_straight, Cyrillic_U_straight,         U051B,    U051A ] };                               // ц Ц ҵ Ҵ ү Ү ԛ Ԛ
     key <AD03> { [        Cyrillic_u,      Cyrillic_U,         Byelorussian_shortu,    Byelorussian_SHORTU,     Cyrillic_u_straight_bar,Cyrillic_U_straight_bar,  Byelorussian_shortu, Byelorussian_SHORTU ] };      // у У ў Ў ұ Ұ ў Ў
-    key <AD04> { [       Cyrillic_ka,     Cyrillic_KA,       Cyrillic_ka_descender,  Cyrillic_KA_descender,     U049F,    U049E,                                  U046F,    U046E ] };                               // к К Қ қ ҟ Ҟ ѯ Ѯ 
+    key <AD04> { [       Cyrillic_ka,     Cyrillic_KA,       Cyrillic_ka_descender,  Cyrillic_KA_descender,     U049F,    U049E,                                  U046F,    U046E ] };                               // к К Қ қ ҟ Ҟ ѯ Ѯ
     key <AD05> { [     Cyrillic_ie,       Cyrillic_IE,                 Cyrillic_io,            Cyrillic_IO,     U0463,    U0462,                                  UA653,    UA652 ] };	                             // е Е ё Ё ѣ Ѣ ꙓ Ꙓ
     key <AD06> { [     Cyrillic_en,       Cyrillic_EN,                Cyrillic_nje,           Cyrillic_NJE,     Cyrillic_en_descender, Cyrillic_EN_descender,     U04C8,    U04C7 ] };	                             // н Н њ Њ ң Ң ӈ Ӈ
     key <AD07> { [      Cyrillic_ghe,    Cyrillic_GHE, Ukrainian_ghe_with_upturn,Ukrainian_GHE_WITH_UPTURN,     Cyrillic_ghe_bar, Cyrillic_GHE_bar,               U04F7,    U04F6 ] };                               // г Г Ґ ґ ғ Ғ ӷ Ӷ
@@ -1051,7 +1052,7 @@ xkb_symbols "unipunct" {
 
  include "us(basic)"
  name[Group1]= "Russian (with US punctuation)";
- 
+
  // Единственный символ, который отсутствует на US раскладке - №
  key <AE03> { [ 3,             numbersign, 3, numerosign  ] };
 

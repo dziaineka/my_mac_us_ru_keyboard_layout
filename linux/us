@@ -69,17 +69,63 @@ xkb_symbols "euro" {
     include "level3(ralt_switch)"
 };
 
-
+// Altered by Andrei Dziaineka <dziaineka@gmail.com>
 partial alphanumeric_keys
 xkb_symbols "ibm238l" {
 
-    include "us(basic)"
     name[Group1]= "English (rus dot)";
 
-    key <AE07> {	[         7,    question        ]       };
-    key <AB08> {        [ ampersand,	less		]	};
+    key <TLDE> { [  grave,  asciitilde,         U0301,       U2019  ] };
+    key <AE01> { [      1,      exclam,      division,       U2248  ] };  // Division Sign and Almost Equal To
+    key <AE02> { [      2,    quotedbl,            at,    infinity  ] };
+    key <AE03> { [      3,  numbersign,       section,       U20B4  ] };  // Paragraph and Hryvnia sign
+    key <AE04> { [      4,     percent,        dollar,    EuroSign  ] };
+    key <AE05> { [      5,       colon,        degree,    permille  ] };
+    key <AE06> { [      6,       comma,        less, lessthanequal  ] };
+    key <AE07> { [      7,    question,  greater, greaterthanequal  ] };
+    key <AE08> { [      8,    semicolon,enfilledcircbullet,multiply  ] };
+    key <AE09> { [      9,   parenleft,   bracketleft,   braceleft  ] };
+    key <AE10> { [      0,  parenright,  bracketright,  braceright  ] };
+    key <AE11> { [  minus,  underscore,        emdash,      endash  ] };
+    key <AE12> { [  equal,        plus,      notequal,   plusminus  ] };
+
+    key <AD01> {	[	  q,	Q 		]	};
+    key <AD02> {	[	  w,	W		]	};
+    key <AD03> {	[	  e,	E		]	};
+    key <AD04> {	[	  r,	R		]	};
+    key <AD05> {	[	  t,	T		]	};
+    key <AD06> {	[	  y,	Y		]	};
+    key <AD07> {	[	  u,	U		]	};
+    key <AD08> {	[	  i,	I		]	};
+    key <AD09> {	[	  o,	O		]	};
+    key <AD10> {	[	  p,	P		]	};
+    key <AD11> {	[ bracketleft,	braceleft	]	};
+    key <AD12> {	[ bracketright,	braceright	]	};
+
+    key <AC01> {	[	  a,	A 		]	};
+    key <AC02> {	[	  s,	S		]	};
+    key <AC03> {	[	  d,	D		]	};
+    key <AC04> {	[	  f,	F		]	};
+    key <AC05> {	[	  g,	G		]	};
+    key <AC06> {	[	  h,	H		]	};
+    key <AC07> {	[	  j,	J		]	};
+    key <AC08> {	[	  k,	K		]	};
+    key <AC09> {	[	  l,	L		]	};
+    key <AC10> {	[    at,	dollar		]	};
+    key <AC11> {	[ apostrophe,	asciicircum	]	};
+
+    key <AB01> {	[	  z,	Z 		]	};
+    key <AB02> {	[	  x,	X		]	};
+    key <AB03> {	[	  c,	C		]	};
+    key <AB04> {	[	  v,	V		]	};
+    key <AB05> {	[	  b,	B		]	};
+    key <AB06> {	[	  n,	N		]	};
+    key <AB07> {	[	  m,	M		]	};
+    key <AB08> {    [ ampersand,	less		]	};
     key <AB09> {	[     slash,	greater		]	};
-    key <AB10> {	[    period,	comma		]	};
+    key <AB10> {	[    period,	asterisk		]	};
+
+    key <BKSL> {	[ backslash,         bar	]	};
 };
 
 partial alphanumeric_keys
@@ -2083,7 +2129,7 @@ xkb_symbols "3l-cros" {
     };
 };
 
-// A 3l variant for emacs users, which maps control to caps lock and (re)maps 
+// A 3l variant for emacs users, which maps control to caps lock and (re)maps
 // tab back to tab.
 partial modifier_keys
 xkb_symbols "3l-emacs" {
