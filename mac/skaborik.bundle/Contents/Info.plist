@@ -12,6 +12,8 @@
 	<dict>
 		<key>TICapsLockLanguageSwitchCapable</key>
 		<true/>
+		<key>TISIconIsTemplate</key>
+		<false/>
 		<key>TISInputSourceID</key>
 		<string>org.sil.ukelele.keyboardlayout.untitled2.ru_by_ad</string>
 		<key>TISIntendedLanguage</key>
@@ -21,6 +23,8 @@
 	<dict>
 		<key>TICapsLockLanguageSwitchCapable</key>
 		<true/>
+		<key>TISIconIsTemplate</key>
+		<false/>
 		<key>TISInputSourceID</key>
 		<string>org.sil.ukelele.keyboardlayout.untitled2.us_ad</string>
 		<key>TISIntendedLanguage</key>
