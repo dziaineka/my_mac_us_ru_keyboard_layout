@@ -8,25 +8,25 @@
 	<string>skaborik</string>
 	<key>CFBundleVersion</key>
 	<string></string>
-	<key>KLInfo_RU_BY_ad</key>
+	<key>KLInfo_cyrillic</key>
 	<dict>
 		<key>TICapsLockLanguageSwitchCapable</key>
 		<true/>
 		<key>TISIconIsTemplate</key>
 		<false/>
 		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout.untitled2.ru_by_ad</string>
+		<string>org.sil.ukelele.keyboardlayout.untitled2.cyrillic</string>
 		<key>TISIntendedLanguage</key>
-		<string>ru</string>
+		<string>be</string>
 	</dict>
-	<key>KLInfo_US_ad</key>
+	<key>KLInfo_latin</key>
 	<dict>
 		<key>TICapsLockLanguageSwitchCapable</key>
 		<true/>
 		<key>TISIconIsTemplate</key>
 		<false/>
 		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout.untitled2.us_ad</string>
+		<string>org.sil.ukelele.keyboardlayout.untitled2.latin</string>
 		<key>TISIntendedLanguage</key>
 		<string>en</string>
 	</dict>
